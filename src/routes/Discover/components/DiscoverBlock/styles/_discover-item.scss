@@ -1,0 +1,40 @@
+.discover-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  margin: 20px;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    min-width: 100%;
+    margin-right: 0 !important;
+  }
+
+  &:hover &__art {
+    transform: scale(1.05);
+  }
+
+  &__art {
+    height: 100px;
+    width: 100px;
+    border-radius: 6px;
+    background-size: cover;
+    transition: transform 0.15s ease-in-out;
+    cursor: pointer;
+
+    @media only screen and (max-width: 500px) {
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  &__title {
+    font-size: 12px;
+    text-align: center;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+}
